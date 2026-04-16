@@ -1,2 +1,110 @@
-/* Task 1.1. Add your movie data here 
-   and export it so it's available in server.js */
+const movies = {
+  tt0499549: {
+    imdbID: "tt0499549",
+    "Title": "Avatar",
+    "Released": "2009-12-18",
+    "Runtime": 162,
+    "Genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "Directors": [
+      "James Cameron"
+    ],
+    "Writers": [
+      "James Cameron"
+    ],
+    "Actors": [
+      "Sam Worthington",
+      "Zoe Saldaña",
+      "Sigourney Weaver"
+    ],
+    "Plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_SX300.jpg",
+    "Metascore": 83,
+    "imdbRating": 7.9
+  },
+  tt0120737: {
+    imdbID: "tt0120737",
+    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Released": "2001-12-19",
+    "Runtime": 178,
+    "Genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "Directors": [
+      "Peter Jackson"
+    ],
+    "Writers": [
+      "J.R.R. Tolkien",
+      "Fran Walsh",
+      "Philippa Boyens"
+    ],
+    "Actors": [
+      "Elijah Wood",
+      "Ian McKellen",
+      "Orlando Bloom"
+    ],
+    "Plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNzIxMDQ2YTctNDY4MC00ZTRhLTk4ODQtMTVlOWY4NTdiYmMwXkEyXkFqcGc@._V1_SX300.jpg",
+    "Metascore": 92,
+    "imdbRating": 8.9
+  },
+  tt31193180: {
+    imdbID: "tt31193180",
+    "Title": "Sinners",
+    "Released": "2025-04-18",
+    "Runtime": 137,
+    "Genres": [
+      "Action",
+      "Drama",
+      "Horror"
+    ],
+    "Directors": [
+      "Ryan Coogler"
+    ],
+    "Writers": [
+      "Ryan Coogler"
+    ],
+    "Actors": [
+      "Michael B. Jordan",
+      "Jack O'Connell",
+      "Hailee Steinfeld"
+    ],
+    "Plot": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNjIwZWY4ZDEtMmIxZS00NDA4LTg4ZGMtMzUwZTYyNzgxMzk5XkEyXkFqcGc@._V1_SX300.jpg",
+    "Metascore": 84,
+    "imdbRating": 7.5
+  },
+  tt0245429: {
+    imdbID: "tt0245429",
+    "Title": "Spirited Away",
+    "Released": "2003-03-28",
+    "Runtime": 124,
+    "Genres": [
+      "Animation",
+      "Adventure",
+      "Family"
+    ],
+    "Directors": [
+      "Hayao Miyazaki"
+    ],
+    "Writers": [
+      "Hayao Miyazaki"
+    ],
+    "Actors": [
+      "Miyu Irino",
+      "Rumi Hiiragi",
+      "Mari Natsuki"
+    ],
+    "Plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches and spirits, and where humans are changed into beasts.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_SX300.jpg",
+    "Metascore": 96,
+    "imdbRating": 8.6
+  }
+};
+
+module.exports = movies;
