@@ -56,8 +56,14 @@ window.onload = function () {
         const detailsSection = document.createElement("div");
         detailsSection.className = "details";
 
-        const creditsSection = document.createElement("section");
+        const creditsSection = document.createElement("div");
         creditsSection.className = "credits";
+
+        creditsSection.append(
+          createCreditBlock("Actors:", movie.Actors),
+          createCreditBlock("Directors:", movie.Directors),
+          createCreditBlock("Writers:", movie.Writers)
+        )
 
         const ratingsSection = document.createElement("div");
         ratingsSection.className = "ratings-section"; 
@@ -131,13 +137,6 @@ window.onload = function () {
         plot.textContent = movie.Plot;
 
         plotSection.append(plotHeading, plot);
-
-        // CREDITS
-        creditsSection.append(
-          createCreditBlock("Actors:", movie.Actors),
-          createCreditBlock("Directors:", movie.Directors),
-          createCreditBlock("Writers:", movie.Writers)
-        );
 
         // RATINGS
         const ratings = document.createElement("div");
