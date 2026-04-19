@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const movieModel = require('./movie-model.js');
-
+const fs = require('fs');
 const app = express();
 
 // Parse urlencoded bodies
@@ -27,7 +27,6 @@ app.get('/movies/:imdbID', function (req, res) {
 })
 
 app.put('/movies/:imdbID', function (req, res) {
-  console.log("PUT endpoint hit:", req.params.imdbID);
   const imdbID = req.params.imdbID;
   const movie = req.body;
 

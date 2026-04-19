@@ -33,7 +33,7 @@ window.onload = function () {
   xhr.onload = function () {
     const bodyElement = document.body;
 
-    if (xhr.status == 200) {
+    if (xhr.status === 200) {
       const movies = JSON.parse(xhr.responseText);
 
       const heading = document.createElement("h1");
@@ -56,7 +56,7 @@ window.onload = function () {
         const detailsSection = document.createElement("div");
         detailsSection.className = "details";
 
-        const creditsSection = document.createElement("div");
+        const creditsSection = document.createElement("section");
         creditsSection.className = "credits";
 
         creditsSection.append(
@@ -73,7 +73,7 @@ window.onload = function () {
         title.textContent = movie.Title;
         header.append(title);
 
-        // POSTER
+        // POSTER/IMAGE
         const posterWrapper = document.createElement("div");
         posterWrapper.className = "poster-wrapper";
 
