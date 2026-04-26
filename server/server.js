@@ -11,6 +11,14 @@ app.use(bodyParser.json());
 // Serve static content in directory 'files'
 app.use(express.static(path.join(__dirname, 'files')));
 
+app.get('/genres', function (req, res) {
+  const genres = [...new Set(
+    Object.values(movieModel).flatMap(movie => movie.Genres)
+  )].sort();
+
+  res.json(genres);
+});
+
 // Configure a 'get' endpoint for all movies..
 app.get('/movies', function (req, res) {
   res.json(Object.values(movieModel))
